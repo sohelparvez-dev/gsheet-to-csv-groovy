@@ -1,5 +1,5 @@
-# gsheet-to-csv-golang
-Modify in Google Sheet via Golang
+# gsheet-to-csv-groovy
+Modify in Google Sheet via Groovy
 
 
 # RUN the script using following command:
