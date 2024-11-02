@@ -28,17 +28,13 @@ if (options.h || options.arguments().size()!=1) {
     return
 }
 
-
-
 //tag::login[]
 clientSecret = new File('credentials.json').newInputStream()
 groogleScript = new GroogleScript('new test sheet', clientSecret,[SheetsScopes.SPREADSHEETS])
 sheetScript = new SheetScript(groogleScript: groogleScript)
 //end::login[]
-
 //tag::schemas[]
 sheetScript.withSpreadSheet options.spreadSheet, { spreadSheet ->   
-
     sheets.each{ gSheet ->                                          
         String hojaId = gSheet.properties.title
         println "Google Sheet Title: $hojaId"
@@ -77,4 +73,3 @@ sheetScript.withSpreadSheet options.spreadSheet, { spreadSheet ->
     }
 }
 //end::schemas[]
-
