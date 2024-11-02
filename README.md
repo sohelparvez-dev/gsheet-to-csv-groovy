@@ -1,5 +1,5 @@
 # gsheet-to-csv-groovy
-Generate CSV from Google Sheet via Groovy
+Generate CSV from Google Sheet using Groovy
 
 
 # RUN the script using following command:
